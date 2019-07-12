@@ -1,0 +1,41 @@
+<div class="d-flex justify-content-center bgimg">
+    <table>
+        <br>
+        <tr><td class="border border-dark">
+            <div class="card grey" style="width: 18rem;" *ngIf="data">
+                <div class="card-body">
+                    <h6>Next</h6>
+                    <div class="d-flex justify-content-center"  *ngIf="data.nextShape">
+                    <table>
+                        <tr *ngFor="let line of data.nextShape.layout">
+                            <td class="tddd" *ngFor="let cell of line">
+                                <app-tile [tile]="cell"></app-tile>
+                            </td>
+                        </tr>
+                    </table>
+                    </div>
+                </div>
+            </div>
+        </td></tr><br><br>
+           <tr><td class="border border-dark">
+            <div class="card pad grey" style="width: 18rem;">
+                <h6>Leaderboard</h6>
+                <table class="table table-dark table-stripped">
+                    <thead><td>Name</td><td>Score</td></thead>
+                    <tr *ngFor="let user of users">
+                        <td>{{ user.name }}</td>
+                        <td>{{ user.score }}</td>
+                    </tr>
+                </table>
+            </div>
+        </td></tr>
+        <br> 
+        <tr><td class="border border-dark">
+            <div class="card pad grey">
+                <button class="btn btn-primary" (click)="pauseMenu()">
+                    Settings
+                </button>
+            </div>
+        </td></tr>
+    </table>
+</div>

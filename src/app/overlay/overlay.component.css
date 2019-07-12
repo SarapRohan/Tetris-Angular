@@ -1,0 +1,11 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+}
+:host {
+    background-color: #3b3b3b;
+    display:block;
+    height: 100%;
+}

@@ -1,0 +1,39 @@
+<div class="d-flex justify-content-center">
+  <table><br>
+    <tr><td class="border border-dark">
+      <div class="card grey" style="width: 18rem;" *ngIf="data">
+        <div class="card-body">
+          <h6>Hold</h6>
+          <div class="d-flex justify-content-center" *ngIf="data.holdShape">
+            <table>
+              <tr *ngFor="let line of data.holdShape.layout">
+                <td *ngFor="let cell of line">
+                  <app-tile [tile]="cell"></app-tile></td></tr>
+            </table>
+           </div>
+        </div>
+      </div>
+    </td></tr>
+    <br><br><br><br>
+    <tr><td class="border border-dark">
+      <div class="card grey pad border border-dark rounded-0" style="width: 18rem;">
+        <h6 class="blue">Level</h6>
+        <p *ngIf="data">{{ data.dropSpeed + 1 }}</p>
+      </div>
+    </td></tr>
+    <br>
+    <tr><td class="border border-dark">
+      <div class="card grey pad" style="width: 18rem;">
+        <h6 class="red">Score</h6>
+        <p *ngIf="data">{{ data.score }}</p>
+      </div>
+    </td></tr>
+    <br>
+    <tr><td class="border border-dark">
+      <div class="card grey pad" style="width: 18rem;">
+        <h6 class="green">Lines Left</h6>
+        <p *ngIf="data">{{ data.linesLeft }}</p>
+      </div>
+    </td></tr>
+  </table>
+</div>

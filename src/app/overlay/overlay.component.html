@@ -1,0 +1,16 @@
+<div>
+    <img src="assets/title.png" class="center">
+    <hr>
+    <mat-form-field class="center">
+        <input matInput [(ngModel)]="data.name" type='text' placeholder="Name">
+    </mat-form-field>
+    <mat-form-field class="center">
+        <input matInput [(ngModel)]="data.level" type='number' placeholder="Level" min='1' max='10'>
+    </mat-form-field>
+    <br>
+    <mat-dialog-actions>
+        <button class="center btn btn-secondary" [mat-dialog-close]="data">
+            Start   
+        </button>
+    </mat-dialog-actions>
+</div>

@@ -1,0 +1,23 @@
+.tddd {
+    padding: 0;
+    height: 10%;
+    width: 10%;
+}
+.bottomright {
+    bottom: 40px;
+    right: 20px;
+    font-size: 18px;
+}
+
+thead {
+    font-style: italic;
+}
+
+.pad {
+    padding: 20px;
+}
+
+.grey {
+    background-color: #5e5e5e;
+    color: white;
+}

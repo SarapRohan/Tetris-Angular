@@ -1,0 +1,11 @@
+<br>
+<div class="d-flex justify-content-center">
+    <table class="border-0">
+        <tr *ngFor="let line of board; let i = index">
+            <td *ngFor="let cell of line; let j = index" (dblclick)='getId(i, j)' (mouseover)="move(j)">
+                <app-tile [tile]="cell"></app-tile>
+            </td>
+        </tr>
+    </table>
+</div>
+<br><br>

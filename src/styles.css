@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.mat-dialog-container {
+    color: white;
+    background-color: #3b3b3b;
+}
+
+body {
+    background-color: #3b3b3b;
+}
+
+.grey {
+    background-color: #5e5e5e;
+    color: white;
+}
+ 
+.mat-form-field-label {
+    color: white;
+}
+
+.mat-form-field.mat-focused
+.mat-form-field-label {
+    color: black;
+}
