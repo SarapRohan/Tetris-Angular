@@ -13,6 +13,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { GameOverComponent } from './game-over/game-over.component';
 import { PauseComponent } from './pause/pause.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/compiler/src/core';
 
 @NgModule({
   declarations: [

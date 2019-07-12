@@ -1,5 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Shape } from '../grid/shape';
+import { Component, OnInit, Input, NO_ERRORS_SCHEMA } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { PauseComponent } from '../pause/pause.component';
 import { HttpClient } from '@angular/common/http';
@@ -7,7 +6,8 @@ import { HttpClient } from '@angular/common/http';
 @Component({  
   selector: 'app-right',
   templateUrl: './right.component.html',
-  styleUrls: ['./right.component.css']
+  styleUrls: ['./right.component.css'],
+  
 })  
 
 

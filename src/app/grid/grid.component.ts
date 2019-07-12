@@ -2,7 +2,6 @@ import { Component, OnInit, HostListener, Input, Output, EventEmitter, ViewChild
 import { Shape } from './shape';
 import { MatDialog } from '@angular/material';
 import { GameOverComponent } from '../game-over/game-over.component';
-import { GameService } from '../game.service';
 import { HttpClient } from '@angular/common/http';
 
 @Component({

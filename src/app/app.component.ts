@@ -2,7 +2,6 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { OverlayComponent } from './overlay/overlay.component';
 import { LeftComponent } from './left/left.component';
-import { CommonService } from './common.service';
 import { HttpClient } from '@angular/common/http';
 
 @Component({

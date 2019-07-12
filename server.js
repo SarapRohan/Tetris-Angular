@@ -6,9 +6,22 @@ db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
 });
 
-var express = require('express');
-var path = require('path');
-var bodyParser = require('body-parser');
+
+const express = require('express');
+const path = require('path');
+
+const app = express();
+
+// Serve only the static files form the dist directory
+app2.use(express.static('./dist'));
+
+app2.get('/*', function(req,res) {
+    
+res.sendFile(path.join(__dirname,'/dist/index.html'));
+});
+
+// Start the app by listening on the default Heroku port
+app2.listen(process.env.PORT || 8080);
 
 var app = express();
 app.use(express.json());
